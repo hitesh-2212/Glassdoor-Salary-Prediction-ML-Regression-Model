@@ -1,6 +1,7 @@
 # 💼 Salary Prediction Using Machine Learning
 
-<img width="640" height="360" alt="image" src="https://github.com/user-attachments/assets/bab5dc0c-e9c7-4ae5-8668-c3bf36f0eae1" />
+<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/7b210ce2-d628-40cb-baa2-3e0145e8d45e" />
+
 
 ## 📌 Project Overview:-
 
