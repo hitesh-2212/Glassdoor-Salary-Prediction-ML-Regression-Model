@@ -1,23 +1,30 @@
-💼 Salary Prediction using Machine Learning
-📌 Project Overview
+# 💼 Salary Prediction Using Machine Learning
 
-In today’s competitive tech job market, understanding salary trends is crucial for job seekers, employers, and recruiters. This project aims to predict tech job salaries using machine learning based on job attributes such as role, skills, company size, company age, and location.
+<img width="640" height="360" alt="image" src="https://github.com/user-attachments/assets/bab5dc0c-e9c7-4ae5-8668-c3bf36f0eae1" />
 
-Using job posting data from Glassdoor (2017–2018), I built an end-to-end regression pipeline that cleans raw salary data, performs feature engineering, compares multiple models, and selects the most stable and accurate model for salary prediction.
+## 📌 Project Overview:-
 
-🎯 Business Objectives
+In today’s competitive tech job market, understanding salary trends is critical for job seekers, recruiters, and employers. This project builds an end-to-end machine learning pipeline to predict tech job salaries using job attributes such as role, skills, company characteristics, and location.
 
-Help job seekers estimate realistic salary expectations
+Using Glassdoor job postings (2017–2018), the project transforms raw salary data, performs meaningful feature engineering, evaluates multiple regression models, and selects a robust final model that generalizes well to unseen data.
 
-Assist employers and recruiters in benchmarking compensation
+## 🎯 Business Objectives:-
 
-Understand how job role, skills, company size, and location influence salaries
+Estimate realistic salary expectations for job seekers
 
-Build a robust predictive model for salary estimation
+Help employers and recruiters benchmark compensation
 
-📊 Dataset Description
+Understand how job role, skills, company size, age, and location impact salary
 
-The dataset contains ~950 job postings with features including:
+Build a reliable regression model for salary prediction
+
+## 📊 Dataset Description:-
+
+Source: Glassdoor job postings (2017–2018)
+
+#### Size: 950 job listings
+
+#### Key Features:
 
 Job Title
 
@@ -35,52 +42,60 @@ Industry, Sector, Ownership Type
 
 Competitors
 
-🛠️ Key Data Preparation & Feature Engineering
+## 🛠️ Data Preparation & Feature Engineering:-
 
-Cleaned and parsed salary ranges (min, max, average)
+Cleaned and parsed salary ranges into minimum, maximum, and average salary
 
 Applied log transformation to salary to reduce skewness
 
-Extracted skills (Python, SQL, Excel, Machine Learning) from job descriptions
+Extracted key skills (Python, SQL, Excel, Machine Learning) from job descriptions
 
-Created company-level features like company size and company age
+Created company-level features (company size, company age)
 
-Engineered location features including job state and same-state HQ indicator
+Engineered location features (job state, same-state HQ indicator)
 
 Reduced categorical cardinality and applied one-hot encoding
 
-Removed high-cardinality identifiers (e.g., company name) to prevent overfitting
+Removed high-cardinality identifiers (e.g., company name) to avoid overfitting
 
-🤖 Modeling Approach
+## 🤖 Modeling Approach:-
 
-The following regression models were trained and compared:
-
+#### --> Multiple regression models were trained and evaluated:
+---
 Model	Purpose
 Linear Regression	Baseline model
 Decision Tree Regressor	Capture non-linear relationships
-Random Forest Regressor	Final selected model
-✅ Final Model
+Random Forest Regressor	Final selected model 
+---
+✅ Final Model: Random Forest Regressor
 
-Random Forest Regressor (default configuration)
+Chosen for its stability, strong generalization, and superior performance compared to simpler models.
 
-Chosen for its stability, generalization, and strong performance
+## 📈 Model Performance (Test Set):-
 
-📈 Model Performance (Test Set)
+#### R² Score: 0.80
 
-R² Score: ~0.80
+#### Mean Absolute Error: ~14–15% (log-scale salary)
 
-Mean Absolute Error: ~14–15% (log-scale salary)
+#### Demonstrates minimal overfitting and strong predictive accuracy
 
-Demonstrated strong generalization with minimal overfitting
+#### An Actual vs Predicted Salary plot confirms predictions closely track real salary values, with expected variance at higher salary ranges.
 
-An Actual vs Predicted Salary plot confirms predictions closely follow real salary values, with expected variability at higher salary ranges.
-
-🔍 Key Insights
+## 🔍 Key Insights:-
 
 Job role and location are the strongest drivers of salary
 
-Company size and age significantly influence compensation
+Company size and company age significantly influence compensation
 
 Demand for Python and Machine Learning skills is associated with higher salaries
 
-Ensemble models outperform linear approaches for this problem
+Ensemble models outperform linear approaches for salary prediction
+
+## 💡 Business Impact:-
+
+Empowers job seekers with data-driven salary expectations
+
+Helps recruiters design competitive compensation strategies
+
+Demonstrates practical application of machine learning to real-world labor market data
+
