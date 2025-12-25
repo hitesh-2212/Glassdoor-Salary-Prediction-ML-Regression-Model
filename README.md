@@ -61,12 +61,15 @@ Removed high-cardinality identifiers (e.g., company name) to avoid overfitting
 ## 🤖 Modeling Approach:-
 
 #### --> Multiple regression models were trained and evaluated:
----
-Model	Purpose
+
+Model	Purpose 
+
 Linear Regression	Baseline model
+
 Decision Tree Regressor	Capture non-linear relationships
-Random Forest Regressor	Final selected model 
----
+
+### Random Forest Regressor	Final selected model 
+
 ✅ Final Model: Random Forest Regressor
 
 Chosen for its stability, strong generalization, and superior performance compared to simpler models.
